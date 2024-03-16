@@ -51,7 +51,7 @@ const Pokemon = ({ pokemon, language }) => {
         <div className="pokemon-id-name"> [{pokemon.id}] {getNameByLanguage()}</div>
         <div className="pokemon-type">
           {getTypeColors().map(({ type, color }, index) => (
-            <span key={index} style={{ backgroundColor: color, marginRight: '5px', padding: '2px 5px', borderRadius: '5px' }}>{type}</span>
+            <span key={index} style={{ backgroundColor: color, marginRight: '5px', padding: '5px 5px', borderRadius: '15px' }}>{type}</span>
           ))}
         </div>
         <div className="stats-container">

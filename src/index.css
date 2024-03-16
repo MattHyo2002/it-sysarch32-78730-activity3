@@ -1,12 +1,13 @@
 header, footer, body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .pokemon-card {
   border: 5px solid #ffdb4d;
   background: lightblue;
   border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
+  padding: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,12 +15,16 @@ header, footer, body {
 }
 
 .pokemon-image img {
-  size: 100%;
   border: 5px solid grey;
   background-color: white;
-  max-height: 200px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.pokemon-id-name{
+  padding: 3%;
 }
 
 .pokemon-details {
@@ -27,16 +32,20 @@ header, footer, body {
   text-align: center;
 }
 
-.pokemon-stats {
-  margin-top: 8px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
+.pokemon-stats-column{
+  margin-left: 20px;
 }
 
-.pokemon-stats div {
-  flex-basis: 50%;
+.pokemon-type{
+  padding: 3%;
+}
+
+.stats-container {
+  margin-top: 3%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .pokedex {
